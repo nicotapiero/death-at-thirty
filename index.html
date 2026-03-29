@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/50459d4e-f80f-4258-beba-6ec914c1b2e7/antism.png" />
+
+    <title>Weekends Calculator</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="take-up-space" id="spacer"></div>
+    <center>
+      <form action="javascript:submitForm()" id="formID">
+        Input date of birth:<br />
+        <input type="date" id="birthday" value="1998-03-08" /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      
+      <div id="realization"  hidden="true">
+        <h1 id="realizationText">
+        You have x weekends left until you are 30
+      </h1>
+      <progress id="progressBarID" value="1" max="100"></progress><br/><br/><br/>
+      </div>
+      
+      <button type="button" onclick="javascript:switchPage()" hidden="true" id="viewWeekendsButton">View Weekends</button>
+      <br/>
+      
+      <div id="proof" hidden="true">
+      </div>
+      
+      
+      
+    </center>
+  </body>
+</html>
